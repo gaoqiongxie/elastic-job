@@ -1,7 +1,6 @@
 package com.xw.elastic_job.logic.impl;
 
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,9 +14,9 @@ public class JobLogicImpl implements JobLogic {
 	private JobTask jobTask;
 
 	// TODO 自动注入报错啊！！
-//	@Autowired
-//	private ExecutorService threadPool;
-    private ExecutorService threadPool = Executors.newCachedThreadPool();
+	@Autowired
+	private ExecutorService threadPool;
+//    private ExecutorService threadPool = Executors.newCachedThreadPool();
 
 
 	@Override
