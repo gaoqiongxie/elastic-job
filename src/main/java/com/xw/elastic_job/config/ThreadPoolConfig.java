@@ -17,10 +17,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ThreadPoolConfig {
 	
-	@Bean
-    public ExecutorService getThreadPool() {
-        System.out.println("ExecutorService getThreadPool()...");
-        return new ThreadPoolExecutor(2, 5, 10, TimeUnit.SECONDS,
-                new LinkedBlockingDeque<>());
-    }
+//	@Bean
+//    public ExecutorService getThreadPool() {
+//        System.out.println("ExecutorService getThreadPool()...");
+//        return new ThreadPoolExecutor(2, 5, 10, TimeUnit.SECONDS,
+//                new LinkedBlockingDeque<>());
+//    }
 }
